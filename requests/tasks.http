@@ -1,0 +1,29 @@
+@api = http://localhost:3000/tasks
+GET {{api}}
+
+### 
+GET {{api}}/4
+
+###
+GET {{api}}/count
+
+###
+POST {{api}}
+Content-Type: application/json
+
+{
+    "title": "task 5",
+    "description": "some description 5"
+}
+
+###
+DELETE {{api}}/10
+
+###
+PUT {{api}}/4
+Content-Type: application/json
+
+{
+    "title": "task 4",
+    "description": "some description 4"
+}
